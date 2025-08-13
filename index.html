@@ -2,61 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Desafio Página WEB</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+    <h1 id="inicio">Fundamentos HTML</h1>
+    <hr>
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+        <ul>
+            <li><a href="#historia">História do HTML</a></li>
+            <li><a href="#cliente-servidor">Cliente x Servidor</a></li>
+            <li><a href="#estrutura">Estrutura Básica</a></li>
+            <li><a href="#acessibilidade">Acessibilidade</a></li>
+            <li><a href="#semantica">Semântica</a></li>
+            <li><a href="#ref">Link de Referências</a></li>
+        </ul>
+    <hr>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h3 id="historia">História do HTML</h3><small><a href="#inicio">Voltar</a></small>  
+    <p>HTML surgiu no início da década de 1990, criado por <u>Tim Berners-Lee</u>, cientista britânico que também inventou a World Wide Web. A primeira versão do HTML foi extremamente simples, com poucas tags e sem suporte para estilos ou interatividade.</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    Ao longo dos anos, o HTML evoluiu significativamente:
+        <ul>
+            <li>HTML 2.0 (1995): Padronizou os primeiros elementos usados na web.</li><br>
+            <li>HTML 3.2 (1997): Introduziu suporte a scripts e estilos.</li><br>
+            <li>HTML 4.01 (1999): Tornou-se mais robusto, com foco em acessibilidade e estrutura.</li><br>
+            <li> HTML5 (2014): Revolucionou a web com suporte nativo a vídeo, áudio, gráficos, semântica e APIs modernas.</li>
+        </ul>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    Hoje, o HTML é a base da construção de páginas web, sendo constantemente atualizado para atender às novas demandas da internet moderna.
+    <hr>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h3 id="cliente-servidor">Cliente x Servidor</h3><small><a href="#inicio">Voltar</a></small>
+    <p>O modelo cliente-servidor é a base da comunicação na web.</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+    <p>Ao acessar um site o navegador envia uma requisição ao servidor, que responde com os arquivos HTML, CSS e JavaScript necessários para exibir a página.</p>
 
+    <p>Este modelo permite que múltiplos clientes acessem simultaneamente os recursos de um servidor, tornando a web escalável e eficiente.</p>
+
+    <h4>Cliente</h4>
+    <p>Sempre que um dispositivo com acesso à internet visita um site, o navegador consulta a estrutura da página e realiza o download dos arquivos necessários — como HTML, CSS, JavaScript e imagens. Esses arquivos são armazenados temporariamente no cache do navegador, permitindo que futuras visitas ao mesmo site sejam mais eficientes.</p>
+
+    <p>Após o navegador copiar os arquivos do site e armazená-los em cache, ele carrega a estrutura da página localmente. Isso permite que o conteúdo seja exibido de forma rápida e eficiente, tornando a página acessível ao usuário com menor tempo de espera.</p>
+
+    <h4>Servidor</h4>
+    <p>No lado do servidor, quando uma requisição <abbr title="Hypertext Transfer Protocol"><u>HTTP</u></abbr> é recebida, ela passa por uma série de etapas até ser processada. O servidor identifica qual recurso foi solicitado como uma página HTML, um arquivo CSS, um script JavaScript ou até dados de uma API e determina como responder com base nas rotas e regras configuradas na aplicação.
+
+    <p>Se o conteúdo solicitado for estático (<i>como imagens ou arquivos HTML prontos</i>), o servidor simplesmente localiza e envia o arquivo correspondente. Já em casos de conteúdo dinâmico, o servidor pode precisar executar scripts, acessar bancos de dados, processar lógica de negócio ou interagir com outras APIs antes de gerar uma resposta.</p>
+
+    <p> Uma vez que os dados ou arquivos apropriados são preparados, o servidor os encapsula em uma resposta <abbr title="Hypertext Transfer Protocol"><u>HTTP</u></abbr> e os envia de volta ao cliente, acompanhados de cabeçalhos que definem detalhes importantes, como tipo de conteúdo, status da requisição e políticas de cache.</p>
+
+    <p>Para que seu site apareça para o mundo, ele precisa de dois elementos essenciais: um servidor de hospedagem e um domínio próprio. No Brasil, o registro desse domínio é feito pelo <strong>Registro.BR</strong>, é ele que garante um endereço único na internet.</p>
+    <hr>
+
+    <h3 id="estrutura">Estrutura Básica</h3><small><a href="#inicio">Voltar</a></small>
+    <p>Um documento HTML segue uma estrutura básica, composta por elementos organizados de forma hierárquica. Veja a seguir os principais componentes:</p>
+    
+    <figure>
+        <img src="estrutura_basica_html.png" alt="Estrutura Básica do HTML e seus elementos(TAGs) " width="200">
+        <figcaption>Fig.1 - Estrutura Básica do HTML</figcaption>
+    </figure>
+
+    <p>Visto na imagem acima a estrutura, as tags podem ser definidas da seguinte maneira:</p>
+        <ol type="I" title="Breve explicação sobre cada TAG HTML">
+            <li>DOCTYPE: define o tipo de documento.</li>
+            <li>html: define o início do documento html, todos as demais tags devem estar dentro desta tag.</li>
+            <li>head: cabeçalho onde ficar os metadados do documento, como metatgs, css e javascript.</li>
+            <li>meta: metatags, como charset, description, viewport ou keywords</li>
+            <li>title: define o título do documento, mostrado na barra de títulos do navegador e como link nos mecanismos de busca.</li>
+            <li>body: corpo ou área principal do documento, dentro deste deve ficar o conteúdo da sua página.</li>
+        </ol>
+    <hr>
+
+    <h3 id="acessibilidade">Acessibilidade</h3><small><a href="#inicio">Voltar</a></small>
+    <p>WAI-ARIA, o Accessible Rich Internet Applications Suite, define uma maneira de tornar o conteúdo e os aplicativos da web mais acessíveis a pessoas com deficiência. Ele ajuda especialmente com conteúdo dinâmico e controles avançados de interface do usuário desenvolvidos com HTML, JavaScript e tecnologias relacionadas.</p>
+
+        <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Accessibility">
+            <i>Aprender HTML, CSS e Javascript é útil se você quer se tornar um desenvolvedor web, mas seu conhecimento precisa ir além. Você deve usá-las de forma a maximizar a audiencia dos seus sites, e permitir que todos possam acessar o conteúdo. Para conseguir isso, será necessário seguir boas práticas, realizar testes em vários navegadores e pensar em acessibilidade desde o início do desenvolvimento.</i>
+        </blockquote>
+
+    <p>Sem o WAI-ARIA, certas funcionalidades usadas em sites, não estão disponíveis para alguns usuários com deficiência - especialmente pessoas que dependem de leitores de tela e pessoas que não podem usar um mouse. O WAI-ARIA aborda esses desafios de <mark>acessibilidade</mark>, por exemplo, definindo maneiras de fornecer funcionalidade à tecnologia assistiva. Com o WAI-ARIA, os desenvolvedores podem tornar os aplicativos da Web avançados acessíveis e utilizáveis para pessoas com deficiência.</p>
+    <hr>
+
+    <h3 id="semantica">Semântica</h3><small><a href="#inicio">Voltar</a></small>
+    <p>A semântica em HTML se refere ao uso de tags que têm significado próprio, ou seja, que indicam claramente o papel daquele conteúdo dentro da estrutura de uma página. Em vez de apenas dizer "aqui tem algo", o HTML semântico diz "aqui tem um cabeçalho", "aqui tem um artigo", ou "aqui tem uma navegação".</p>
+
+    <p>A semântica é importante por conta da <mark>acessibilidade</mark>, SEO, Manutenção e legibilidade, entre outros. Leitores de tela e outras tecnologias assistivas conseguem interpretar melhor o conteúdo, assim como, motores de busca entendem com mais clareza a estrutura e o propósito de cada parte do conteúdo. O código fica mais organizado, fácil de entender e manter, possibilitando que aplicações e ferramentas externas possam interagir melhor com o site.</p>
+
+    A estrutura básica utilizando semântica é definida como na figura abaixo pelos elementos:
+    
+    <figure>
+        <img src="html5_semantico.png" alt="TAGS semânticas no HTML5" width="200">
+        <figcaption>Fig.2 - Semântica HTML5</figcaption>
+    </figure>
+
+    <p>Visto na imagem acima a estrutura, as tags podem ser definidas da seguinte maneira:</p>
+        <ol type="I" title="Breve explicação sobre cada TAG HTML5 semântica">
+            <li>header: Cabeçalho de uma página ou seção</li>
+            <li>nav: Menu de navegação principal</li>
+            <li>main: Conteúdo principal da página</li>
+            <li>section: Seções temáticas dentro do conteúdo</li>
+            <li>article: Conteúdo independente, como postagens ou notícias</li>
+            <li>aside: Conteúdo complementar (como barras laterais).</li>
+            <li>footer: Rodapé da página ou de uma seção</li>
+        </ol>
+
+    <p>Utilizar HTML semântico é mais do que uma boa prática, é uma forma de tornar a web mais acessível, compreensível e eficiente para todos. Ao aplicar a semântica corretamente, você contribui para uma internet mais inclusiva e melhora a qualidade técnica do seu projeto.</p>
+    <hr>
+
+    <h3 id="ref">Referências</h3><small><a href="#inicio">Voltar</a></small>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></li>
+            <li><a href="https://www.w3.org/WAI/standards-guidelines/aria/">https://www.w3.org/WAI/standards-guidelines/aria/</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Accessibility">https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Accessibility</a></li>
+
+        </ul>
+    <hr>
+    
+    <footer role="rodapé">
+        <h4>Fundamentos HTML <sup>&#174</sup></h4>
+        <p>Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
